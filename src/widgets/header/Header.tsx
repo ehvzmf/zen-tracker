@@ -1,7 +1,16 @@
-export const Header: React.FC = () => {
+import React from 'react';
+import { AppBar, Toolbar, Typography } from '@mui/material';
+
+const Header: React.FC = () => {
   return (
-    <header style={{ backgroundColor: '#333', color: '#fff', padding: '1rem' }}>
-      <h1>My App</h1>
-    </header>
+    <AppBar position="static">
+      <Toolbar>
+        <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+          My App
+        </Typography>
+      </Toolbar>
+    </AppBar>
   );
 };
+
+export default Header;
