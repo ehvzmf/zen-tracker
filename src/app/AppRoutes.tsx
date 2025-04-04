@@ -5,7 +5,7 @@ import { Home } from '@/pages/Home';
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Layout children={undefined} />,
+    element: <Layout />,
     children: [
       {
         index: true,

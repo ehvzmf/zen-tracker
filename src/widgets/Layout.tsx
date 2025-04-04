@@ -1,23 +1,17 @@
+import { Outlet } from 'react-router-dom';
+import { Box } from '@mui/material';
 import Header from './Header';
 import Footer from './Footer';
-import Sidebar from './Sidebar';
+// import Sidebar from './Sidebar';
 
-type LayoutProps = {
-  children: React.ReactNode;
-};
-
-export const Layout: React.FC<LayoutProps> = ({ children }) => {
+export const Layout: React.FC = () => {
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
-
+    <Box display="flex" flexDirection="column" minHeight="100vh">
       <Header />
-
-      <div style={{ display: 'flex', flex: 1 }}>
-        <Sidebar />
-        <main style={{ flex: 1, padding: '1rem' }}>{children}</main>
-      </div>
-
+        <Box component="main" flex={1}>
+          <Outlet />
+        </Box>
       <Footer />
-    </div>
+    </Box>
   );
 };

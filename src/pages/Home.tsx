@@ -2,7 +2,14 @@ import { Box, Container, Typography, } from '@mui/material'
 
 export const Home: React.FC = () => {
   return (
-    <Container>
+    <Container
+      sx={{
+        width: 938,
+        height: '80vh',
+        display: 'flex',
+        justifyContent: 'center',
+      }}
+    >
       <Typography>
         안녕! 여기는 홈입니다.
       </Typography>
