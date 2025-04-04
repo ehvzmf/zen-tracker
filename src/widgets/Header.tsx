@@ -1,6 +1,6 @@
 import { AppBar, Toolbar, Typography } from '@mui/material';
 
-export const Header: React.FC = () => {
+const Header: React.FC = () => {
   return (
     <AppBar position="static">
       <Toolbar>
@@ -11,3 +11,5 @@ export const Header: React.FC = () => {
     </AppBar>
   );
 };
+
+export default Header;
