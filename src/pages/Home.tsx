@@ -1,4 +1,4 @@
-import { Box, Container, Typography, } from '@mui/material'
+import { Box, Container, Typography, Divider } from '@mui/material'
 
 export const Home: React.FC = () => {
   return (
@@ -8,6 +8,8 @@ export const Home: React.FC = () => {
         height: '80vh',
         display: 'flex',
         justifyContent: 'center',
+        alignItems: 'center',
+        flexDirection: 'column',
       }}
     >
       <Typography>
@@ -27,7 +29,8 @@ export const Home: React.FC = () => {
           잔액: 250,000
         </Typography>
       </Box>
-      
+
+      <Divider />      
     </Container>
   );
 };
