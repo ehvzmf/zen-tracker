@@ -1,24 +1,29 @@
 const palette = {
   primary: {
-    main: '#1976d2', // 기본 파란색
-    light: '#63a4ff',
+    main: '#B4D9D6',  // Provence
+    light: '#F7EDFF',
     dark: '#004ba0',
-    contrastText: '#fff',
+    contrastText: '#1C1C1C', // Pirate Black
   },
   secondary: {
-    main: '#dc004e', // 기본 빨간색
+    main: '#AED7E0',  // Baby Blue
     light: '#ff5c8d',
     dark: '#9a0036',
-    contrastText: '#fff',
+    contrastText: '#1C1C1C',
   },
   background: {
-    default: '#fff', // 전역 배경색
-    paper: '#D9D9D9',
+    default: '#F5F9F9', // 전역 배경색
+    paper: '#FFFFFF',
   },
   text: {
-    primary: '#000', // 기본 텍스트 색상
-    secondary: '#8C8C8C', // 보조 텍스트 색상
+    primary: '#1C1C1C',  // Pirate Black
+    secondary: '#858E95'  // Monument
   },
+  grey: {
+    500: '#B0B8C1',      // Monument 밝은 톤
+    800: '#858E95',      // Monument
+  },
+  divider: '#DDE4E8', 
 };
 
 export default palette;
