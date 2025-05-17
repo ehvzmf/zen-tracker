@@ -54,7 +54,7 @@
   },
   "config": {
     "commitizen": {
-      "path": "cz-git"
+      "path": "./node_modules/cz-git"
     }
   },
   "eslintConfig": {

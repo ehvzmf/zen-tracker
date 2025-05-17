@@ -1,18 +1,27 @@
-import { Box, Typography } from '@mui/material';
+import { Box, Typography, useTheme, useMediaQuery } from '@mui/material';
 
-const Footer: React.FC = () => {
+const Footer = () => {
+  const theme = useTheme();
+
   return (
     <Box
       component="footer"
       sx={{
-        width: '100%',
-        backgroundColor: '#333',
-        color: '#fff',
+        width: '100vw',
+        backgroundColor: theme.palette.grey[800],
+        color: theme.palette.grey[500],
         padding: '1rem',
         textAlign: 'center',
       }}
     >
-      <Typography variant="body2">© 2025 Zen's Calculator by MY</Typography>
+      <Box 
+        sx={{ 
+          margin: 'auto',
+          border: '1px solid red',
+        }}
+      >
+        <Typography variant="body2">© 2025 Zen's Calculator by MY</Typography>
+      </Box>
     </Box>
   );
 };

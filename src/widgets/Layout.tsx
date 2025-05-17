@@ -3,16 +3,17 @@ import { Box } from '@mui/material';
 import Header from './Header';
 import Footer from './Footer';
 
-export const Layout: React.FC = () => {
+export const Layout = () => {
   return (
     <Box 
       sx={{
-        // minWidth: '100vw',
+        mx: 'auto',
+        width: 938,
         minHeight: '100vh',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center', 
-        // justifyContent: 'center',
+        justifyContent: 'center',
         boxSizing: 'border-box',
       }}
     >
@@ -23,12 +24,6 @@ export const Layout: React.FC = () => {
           mx: 'auto',
           flexGrow: 1,
           width: '100%',
-          // maxWidth: "938px",
-          // display: 'flex',
-          // flexDirection: 'column',
-          // minHeight: '100vh',
-          // justifyContent: 'center',
-          // alignItems: 'center', 
         }}
       >
         <Outlet />

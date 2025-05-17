@@ -4,8 +4,8 @@ export const Home: React.FC = () => {
   return (
     <Container
       sx={{
+        mx: 'auto',
         width: 938,
-        height: '80vh',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',

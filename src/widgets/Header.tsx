@@ -1,6 +1,6 @@
 import { AppBar, Toolbar, Typography, Button, Box } from '@mui/material';
 
-const Header: React.FC = () => {
+const Header = () => {
   return (
     <AppBar 
       position="static"
@@ -11,6 +11,8 @@ const Header: React.FC = () => {
       <Toolbar
         disableGutters
         sx={{
+          mx: 'auto',
+          px: 2,
           width: '100%',
           justifyContent: 'space-between'
         }}
