@@ -12,8 +12,6 @@ export const Layout = () => {
         minHeight: '100vh',
         display: 'flex',
         flexDirection: 'column',
-        alignItems: 'center', 
-        justifyContent: 'center',
         boxSizing: 'border-box',
       }}
     >
@@ -23,7 +21,6 @@ export const Layout = () => {
         sx={{
           mx: 'auto',
           flexGrow: 1,
-          width: '100%',
         }}
       >
         <Outlet />

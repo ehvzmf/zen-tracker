@@ -17,9 +17,18 @@ const Header = () => {
           justifyContent: 'space-between'
         }}
       >
-        <Typography variant="h6">
-          Zen's Tracker
-        </Typography>
+        <Box
+          sx={{
+            mx: 'auto',
+            width: { xs: 393, md: 938 },
+
+          }}
+        >
+          <Typography variant="h6">
+            Zen's Tracker
+          </Typography>         
+        </Box>
+
       </Toolbar>
     </AppBar>
   );
