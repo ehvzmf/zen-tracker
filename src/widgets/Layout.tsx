@@ -7,18 +7,19 @@ export const Layout = () => {
   return (
     <Box 
       sx={{
-        mx: 'auto',
-        width: 938,
-        minHeight: '100vh',
         display: 'flex',
         flexDirection: 'column',
-        boxSizing: 'border-box',
+        alignItems: 'center',
+        width: '100vw',
+        minHeight: '100vh',
+        boxSizing: 'border-box'
       }}
     >
       <Header />
       <Box
         component="main"
         sx={{
+          p: 2,
           mx: 'auto',
           flexGrow: 1,
         }}

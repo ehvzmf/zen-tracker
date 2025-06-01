@@ -52,20 +52,3 @@ a {
 a:hover {
   color: #AED7E0;
 }
-
-html {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
-
-body {
-  margin: 0;
-  align-content: center;
-  justify-content: center;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  max-width: 938px;
-  min-height: 100vh;
-}
