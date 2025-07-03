@@ -3,7 +3,11 @@ import { useState } from 'react';
 
 interface MenuBoxProps {
   title: string;
+  imgSrc: string;
   color: string;
+  hoverColor?: string;
+  path: string;
+  onClick?: () => void;
 }
 
 export const MenuBox = ({ title, color }: MenuBoxProps) => {
@@ -12,8 +16,8 @@ export const MenuBox = ({ title, color }: MenuBoxProps) => {
   return (
     <Box
       sx={{
-        width: 200,
-        height: 100,
+        width: { xs: 180, sm: 200 },
+        height: { xs: 100, sm: 120 },
         backgroundColor: isHovered ? color : '#f0f0f0',
         borderRadius: '8px',
         display: 'flex',

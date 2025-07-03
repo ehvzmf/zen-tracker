@@ -19,8 +19,6 @@ export const Layout = () => {
         sx={{
           display: 'flex',
           flexDirection: 'column',
-          alignItems: 'center',
-          justifyContent: 'space-between',
           width: { xs: '100vw', sm: 600 },
           minHeight: '100vh',
           backgroundColor: '#fff',
@@ -31,7 +29,6 @@ export const Layout = () => {
           component="main"
           sx={{
             p: 2,
-            mx: 'auto',
             flexGrow: 1,
           }}
         >

@@ -1,39 +1,41 @@
 import { Box, Typography, Divider } from '@mui/material'
+import { MenuBox } from '@/widgets/MenuBox'
 
-export const Home: React.FC = () => {
+const Home: React.FC = () => {
   return (
     <Box sx={{ width: '100%' }}>
-      <Box
-        sx={{
-          mx: 'auto',
-          // width: { xs: 393, md: 938 },
-          width: '100%',
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          flexDirection: 'column',
-        }}
-      >
-        <Typography>
-          안녕! 여기는 홈입니다.
+      <Box sx={{ m: 0 }}>
+        <Box
+          component='img'
+          src='/images/zen.png'
+          alt='Zen'
+          sx={{
+            width: 80,
+            height: 80,
+          }}
+        />
+        <Typography 
+          sx={{ 
+            ml: 2,
+            mt: -2,
+            fontFamily: 'Pretendard', 
+            fontSize: 25, 
+            fontWeight: 600,
+          }}
+        >
+          Hi, Zen! 
         </Typography>
-
-        <Typography>
-          4월
-        </Typography>
-
-        <Box>
-          <Typography>
-            총 예산 : 700,000
-          </Typography>
-
-          <Typography>
-            잔액: 250,000
-          </Typography>
-        </Box>
-
-        <Divider />      
       </Box>
+      
+      <Box sx={{ display: 'flex', gap: 3, m: 2 }}>
+        <MenuBox />
+        <MenuBox />
+      </Box>
+
+
+
     </Box>
   );
 };
+
+export default Home;

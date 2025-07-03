@@ -30,7 +30,7 @@ const Header = () => {
             justifyContent: 'space-between',
           }}
         >
-          <Typography variant="h6" sx={{ mx: 4 }}>
+          <Typography variant="h6" sx={{ mx: 4, fontFamily: 'tvNjoystories', fontSize: 40, fontWeight: 700 }}>
             Zen's Tracker
           </Typography>
         </Box>
