@@ -12,7 +12,7 @@ export const Layout = () => {
         alignItems: 'center',
         width: '100vw',
         minHeight: '100vh',
-        boxSizing: 'border-box'
+        backgroundColor: '#000',
       }}
     >
       <Box
@@ -23,6 +23,7 @@ export const Layout = () => {
           justifyContent: 'space-between',
           width: { xs: '100vw', sm: 600 },
           minHeight: '100vh',
+          backgroundColor: '#fff',
         }}
       >
         <Header />
@@ -38,7 +39,6 @@ export const Layout = () => {
         </Box>
         <Footer />        
       </Box>
-
     </Box>
   );
 };

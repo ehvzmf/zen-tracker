@@ -9,7 +9,8 @@ const Header = () => {
       position="static"
       sx={{
         background: '#fff',
-        boxShadow: isMobile ? 'none' : '0px 2px 8px 0px rgba(0, 0, 0, 0.08)',
+        boxShadow: 'none',
+        // boxShadow: isMobile ? 'none' : '0px 2px 8px 0px rgba(0, 0, 0, 0.08)',
       }}
     >
       <Toolbar
@@ -29,9 +30,9 @@ const Header = () => {
             justifyContent: 'space-between',
           }}
         >
-          <Typography variant="h6">
+          <Typography variant="h6" sx={{ mx: 4 }}>
             Zen's Tracker
-          </Typography>         
+          </Typography>
         </Box>
       </Toolbar>
     </AppBar>
