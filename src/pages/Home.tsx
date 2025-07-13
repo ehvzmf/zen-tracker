@@ -28,8 +28,24 @@ const Home: React.FC = () => {
       </Box>
       
       <Box sx={{ display: 'flex', gap: 3, m: 2 }}>
-        <MenuBox />
-        <MenuBox />
+        <MenuBox 
+          title='Daily Tasks' 
+          imgSrc='/images/daily-tasks.png' 
+          color='#4CAF50' 
+          path='/daily-tasks' 
+        />
+        <MenuBox 
+          title='Weekly Review' 
+          imgSrc='/images/weekly-review.png' 
+          color='#2196F3' 
+          path='/weekly-review' 
+        />
+        <MenuBox 
+          title='Monthly Goals' 
+          imgSrc='/images/monthly-goals.png' 
+          color='#FF9800' 
+          path='/monthly-goals' 
+        />
       </Box>
 
 
